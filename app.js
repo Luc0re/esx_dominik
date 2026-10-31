@@ -1,7 +1,7 @@
-window.addEventListener(
-    const message = event.data
+window.addEventListener('message', (event) => {
+    const data = event.data
     
-    if (message === 'play') {
+    if (data.action === 'play') {
         math.pickRandom
     }
-)
+})
